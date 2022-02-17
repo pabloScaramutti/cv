@@ -14,50 +14,132 @@
       box-sizing: border-box;
     }
 
+    body * {
+      margin: 0px;
+      text-align: justify;
+    }
+
     .font-light {
       font-weight: 100;
     }
 
+    .font-bold {
+      font-weight: 700;
+    }
+
     .main-container {
-      max-width: 900px;
+      max-width: 60%;
+      margin: auto;
+      padding-top: 5em;
+      margin-bottom: 50vh;
+    }
+
+    .profile-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: auto;
+      padding: 0 32px;
     }
 
     .profile-picture {
-      height: 20em;
+      width: 35%;
+      max-height: 20em;
+      min-height: 15em;
+      max-width: 20em;
+      min-width: 15em;
       border-radius: 50%;
+    }
+
+    .title {
+      margin: 2.5em 0;
+    }
+
+    .bio {
+      margin-bottom: 2.5em;
     }
 
     .content {
       width: 100%;
       display: flex;
       justify-content: space-between;
+      column-gap: 16px;
+    }
+
+    .content .contact {
+      width: 30%;
+    }
+
+    .content .curriculum {
+      width: 70%;
     }
   </style>
 </head>
 
 <body>
   <div class="main-container">
-    <img src="./src/yo.jpg" class="profile-picture" />
-    <h1>Scaramutti Pablo Martin</h1>
-    <p class="font-light">Multimedia Designer / Front-end Web Developer</p>
+    <div class="profile-container">
+      <img src="./src/yo.jpg" class="profile-picture" />
+      <div class="title">
+        <h1>Scaramutti Pablo Martin</h1>
+        <p class="font-light">Multimedia Designer / Front-end Web Developer</p>
+      </div>
+    </div>
 
-    <p class="font-light">I’m 27 years old based in La Plata, Argentina. I’m searching new experiences to apply,
+    <p class="bio font-light">I’m 27 years old based in La Plata, Argentina. I’m searching new experiences to apply,
       develope my skills and learn from team work.
-
+      <br />
       I love new challenges, finding solutions for problems and helping others to have a better life.
     </p>
 
     <div class="content">
-      <div>
+      <div class="contact">
         <h1>Contact</h1>
+        <h4>pabloscaramutti@gmail.com</h4>
+        <h4>+54 221 571-8024</h4>
+        <h4>/pabloScaramutti</h4>
+        <h4>/in/pabloscaramutti/</h4>
+        <h4>/pabloscaramutti/</h4>
+
+        <h1>Tools</h1>
+
+        <h1>Languages</h1>
+        <p class="font-bold">Spanish: <span class="font-light">Native</span></p>
+        <p class="font-bold">English: <span class="font-light">Intermediate</span></p>
       </div>
-      <div>
+      <div class="curriculum">
         <h1>Work Experience</h1>
+
+        <h3>Panorama - Digital agency</h3>
+        <h4>Visual Designer</h4>
+        <p class="font-light">Gained experience about digital marketing, graphic design, web design, event photography
+          and videography.</p>
+
+        <h3>DevGoblins</h3>
+        <h4>Front-end Developer</h4>
+        <p class="font-light">React & Next</p>
+
+        <h3>Cheers </h3>
+        <h4>Front-end Developer</h4>
+        <p class="font-light">React app and Tailwind</p>
+
         <h1>Education</h1>
+
+        <h3>Degree in Multimedia Design </h3>
+        <h4>National University of La Plata</h4>
+        <p class="font-light">Faculty of Arts</p>
+        <p class="font-light">La Plata, Argentina</p>
+
+        <h3>Professorship in Multimedia Design <span class="font-light">(Ongoing - 91.3%)</span> </h3>
+        <h4>National University of La Plata</h4>
+        <p class="font-light">Faculty of Arts</p>
+        <p class="font-light">La Plata, Argentina</p>
+
+        <h3>University Programmer Analyst <span class="font-light">(Ongoing - 52.17%)</span> </h3>
+        <h4>Computer Science Faculty</h4>
+        <p class="font-light">Faculty of Arts</p>
+        <p class="font-light">La Plata, Argentina</p>
+
       </div>
     </div>
   </div>
