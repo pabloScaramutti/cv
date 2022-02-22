@@ -1,27 +1,28 @@
+import { useTranslation, Trans } from "react-i18next"
 
 export default function Education() {
+
+  const { t } = useTranslation()
+
   return (
     <div>
-      <h1 className="line-separator">Education</h1>
+      <h1 className="line-separator">
+        <Trans>education.title</Trans>
+      </h1>
 
-      <div>
-        <h3>Degree in Multimedia Design</h3>
-        <h4>National University of La Plata</h4>
-        <p className="font-light">Faculty of Arts</p>
-        <p className="font-light">La Plata, Argentina</p>
-      </div>
-      <div>
-        <h3>Professorship in Multimedia Design <span className="font-light">(Ongoing - 95.65%)</span></h3>
-        <h4>National University of La Plata</h4>
-        <p className="font-light">Faculty of Arts</p>
-        <p className="font-light">La Plata, Argentina</p>
-      </div>
-      <div>
-        <h3>University Programmer Analyst <span className="font-light">(Ongoing - 52.17%)</span></h3>
-        <h4>Computer Science Faculty</h4>
-        <p className="font-light">Faculty of Arts</p>
-        <p className="font-light">La Plata, Argentina</p>
-      </div>
+      {
+        t("education.content", { returnObjects: true }).map(e =>
+          <div>
+            <div className="flex align-center no-margin">
+              <h3>{e.title}</h3>
+              <p className="font-light ml-1">{e.status ? e.status : ''}</p>
+            </div>
+            <h4>{e.university}</h4>
+            <p className="font-light">{e.faculty}</p>
+            <p className="font-light">{e.location}</p>
+          </div>)
+      }
+
     </div>
   )
 }

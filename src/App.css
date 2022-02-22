@@ -27,6 +27,15 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+  color: var(--text-primary);
+  font-weight: 700;
+  padding: 0;
+}
+
+br {
+  display: block;
+  content: '';
+  margin-bottom: 1.5em;
 }
 
 ul {
@@ -44,6 +53,18 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.ml-1 {
+  margin-left: 1em;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .App {
@@ -98,7 +119,7 @@ a {
 }
 
 .bio {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .content {
@@ -128,7 +149,7 @@ a {
   width: 65%;
 }
 
-.content .curriculum div {
+.content .curriculum div:not(.no-margin) {
   margin-bottom: 1em;
 }
 

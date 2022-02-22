@@ -4,16 +4,21 @@ import sunIcon from '../assets/icons/sun.svg'
 import moonIcon from '../assets/icons/moon.svg'
 import mailIcon from '../assets/icons/mail-solid.svg'
 
+import { useTranslation } from 'react-i18next'
+
 const switchThemes = {
   dark: 'light',
   light: 'dark'
 }
 
 export default function Menu({ theme, setTheme }) {
+  const { i18n } = useTranslation()
   return (
     <nav className='menu-bar'>
-      <button type="button">ES</button>
-      <button type="button">EN</button>
+      {i18n.language === 'en' ?
+        <button type="button" onClick={() => i18n.changeLanguage('es')}>ES</button>
+        : <button type="button" onClick={() => i18n.changeLanguage('en')}>EN</button>
+      }
       <button
         type='button'
         onClick={() => setTheme(switchThemes[theme])}

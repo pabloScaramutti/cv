@@ -1,27 +1,22 @@
+import { useTranslation, Trans } from "react-i18next"
 
 export default function JobExperience() {
+  const { t } = useTranslation()
   return (
     <div>
-      <h1 className="line-separator">Work Experience</h1>
+      <h1 className="line-separator">
+        <Trans>
+          workExperience.title
+        </Trans>
+      </h1>
 
-      <div>
-        <h3>Panorama - Digital agency</h3>
-        <h4>Visual Designer</h4>
-        <p className="font-light">Gained experience about digital marketing, graphic design, web design, event photography
-          and videography.</p>
-      </div>
-
-      <div>
-        <h3>DevGoblins</h3>
-        <h4>Front-end Developer</h4>
-        <p className="font-light">React & Next</p>
-      </div>
-
-      <div>
-        <h3>Cheers </h3>
-        <h4>Front-end Developer</h4>
-        <p className="font-light">React app and Tailwind</p>
-      </div>
+      {t("workExperience.content", { returnObjects: true }).map(e =>
+        <div key={e.company}>
+          <h3>{e.company}</h3>
+          <h4>{e.jobPosition}</h4>
+          <p className="font-light">{e.description}</p>
+        </div>)
+      }
     </div>
   )
 }
