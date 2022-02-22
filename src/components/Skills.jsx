@@ -63,29 +63,31 @@ const visual = [
 
 export default function Skills() {
   return (
-    <div>
-      <h1>Tools</h1>
-      <div>
-        <h2>IT</h2>
-        <ul>
-          {tools.map(e =>
-            <li key={e.name}>
-              <img src={e.icon} className="icon" />
-              <p>{e.name}</p>
-            </li>
-          )}
-        </ul>
-      </div>
-      <div>
-        <h2>Visual</h2>
-        <ul>
-          {visual.map(e =>
-            <li key={e.name}>
-              <img src={e.icon} className="icon"></img>
-              <p>{e.name}</p>
-            </li>
-          )}
-        </ul>
+    <div >
+      <h1>Toolbox</h1>
+      <div className='skills-container'>
+        <div>
+          <h2>IT</h2>
+          <ul>
+            {tools.map(e =>
+              <li key={e.name}>
+                <img src={e.icon} className="icon" />
+                <p>{e.name}</p>
+              </li>
+            )}
+          </ul>
+        </div>
+        <div>
+          <h2>Visual</h2>
+          <ul>
+            {visual.map(e =>
+              <li key={e.name}>
+                <img src={e.icon} className="icon"></img>
+                <p>{e.name}</p>
+              </li>
+            )}
+          </ul>
+        </div>
       </div>
     </div>
   )
