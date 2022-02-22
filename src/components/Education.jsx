@@ -11,7 +11,7 @@ export default function Education() {
         <p className="font-light">La Plata, Argentina</p>
       </div>
       <div>
-        <h3>Professorship in Multimedia Design <span className="font-light">(Ongoing - 91.3%)</span></h3>
+        <h3>Professorship in Multimedia Design <span className="font-light">(Ongoing - 95.65%)</span></h3>
         <h4>National University of La Plata</h4>
         <p className="font-light">Faculty of Arts</p>
         <p className="font-light">La Plata, Argentina</p>
