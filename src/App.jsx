@@ -11,7 +11,7 @@ import { useState } from 'react'
 import { useTranslation, Trans } from 'react-i18next'
 
 function App() {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || 'dark')
   const { t } = useTranslation()
 
   return (

@@ -13,6 +13,12 @@ const switchThemes = {
 
 export default function Menu({ theme, setTheme }) {
   const { i18n } = useTranslation()
+
+  function changeTheme() {
+    localStorage.setItem('theme', switchThemes[theme])
+    setTheme(switchThemes[theme])
+  }
+
   return (
     <nav className='menu-bar'>
       {i18n.language === 'en' ?
@@ -21,7 +27,7 @@ export default function Menu({ theme, setTheme }) {
       }
       <button
         type='button'
-        onClick={() => setTheme(switchThemes[theme])}
+        onClick={() => changeTheme()}
         title="Change theme"
       >
         {theme == 'dark' ? <img src={sunIcon} className="icon" /> : <img src={moonIcon} className="icon" width="18px" height="18px" />}

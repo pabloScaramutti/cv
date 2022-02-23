@@ -12,10 +12,10 @@ export default function Education() {
 
       {
         t("education.content", { returnObjects: true }).map(e =>
-          <div>
-            <div className="flex align-center no-margin">
-              <h3>{e.title}</h3>
-              <p className="font-light ml-1">{e.status ? e.status : ''}</p>
+          <div key={e.title}>
+            <div className="flex align-center no-margin wrap">
+              <h3 className="mr-1">{e.title}</h3>
+              <p className="font-light font-small">{e.status ? e.status : ''}</p>
             </div>
             <h4>{e.university}</h4>
             <p className="font-light">{e.faculty}</p>
