@@ -24,12 +24,12 @@ i18n
               {
                 company: "DevGoblins",
                 jobPosition: "Front-end developer",
-                description: "React & Next"
+                description: "Made a landing page for the startup company with ReactJS"
               },
               {
                 company: "Cheers smart contracts",
                 jobPosition: "Front-end developer",
-                description: "React & Tailwind"
+                description: "I participate with the elicitation of requirements, the app design and develop the front end of the MVP app with ReactJS and Tailwind"
               }
             ]
           },
@@ -75,12 +75,12 @@ i18n
               {
                 company: "DevGoblins",
                 jobPosition: "Front-end developer",
-                description: "React & Next"
+                description: "Realice la pagina principal de la startup con ReactJS"
               },
               {
                 company: "Cheers smart contracts",
                 jobPosition: "Front-end developer",
-                description: "React & Tailwind"
+                description: "Participé de la elicitacion de requerimientos, el diseño de la aplicación y el desarrollo front end del MVP con ReactJS y Tailwind"
               }
             ]
           },

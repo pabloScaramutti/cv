@@ -5,7 +5,7 @@ export default function Education() {
   const { t } = useTranslation()
 
   return (
-    <div>
+    <div className="container">
       <h1 className="line-separator">
         <Trans>education.title</Trans>
       </h1>

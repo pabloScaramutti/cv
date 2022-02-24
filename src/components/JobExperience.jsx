@@ -3,7 +3,7 @@ import { useTranslation, Trans } from "react-i18next"
 export default function JobExperience() {
   const { t } = useTranslation()
   return (
-    <div>
+    <div className="container">
       <h1 className="line-separator">
         <Trans>
           workExperience.title
