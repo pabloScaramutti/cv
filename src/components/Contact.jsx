@@ -1,3 +1,5 @@
+import { useTranslation, Trans } from 'react-i18next'
+
 import mailIcon from '../assets/icons/mail.svg'
 import phoneIcon from '../assets/icons/phone.svg'
 import githubIcon from '../assets/icons/github.svg'
@@ -5,9 +7,15 @@ import linkedinIcon from '../assets/icons/linkedin.svg'
 import instagramIcon from '../assets/icons/instagram.svg'
 
 export default function Contact() {
+  const { t } = useTranslation()
+
   return (
     <div>
-      <h1>Contact</h1>
+      <h1>
+        <Trans>
+          contact
+        </Trans>
+      </h1>
       <ul>
         <li>
           <a href="mailto:pabloscaramutti@gmail.com">

@@ -1,4 +1,4 @@
-import download from '../assets/PabloScaramutti-cv.png'
+import download from '../assets/PabloScaramutti-cv.pdf'
 import downloadIcon from '../assets/icons/download.svg'
 import sunIcon from '../assets/icons/sun.svg'
 import moonIcon from '../assets/icons/moon.svg'
@@ -11,26 +11,31 @@ const switchThemes = {
   light: 'dark'
 }
 
-export default function Menu({ theme, setTheme }) {
+export default function Menu({ actualTheme, setTheme }) {
   const { i18n } = useTranslation()
 
   function changeTheme() {
-    localStorage.setItem('theme', switchThemes[theme])
-    setTheme(switchThemes[theme])
+    localStorage.setItem('theme', switchThemes[actualTheme])
+    setTheme(switchThemes[actualTheme])
+  }
+
+  function changeLanguage(lang) {
+    i18n.changeLanguage(lang)
+    localStorage.setItem('lang', lang)
   }
 
   return (
     <nav className='menu-bar'>
       {i18n.language === 'en' ?
-        <button type="button" onClick={() => i18n.changeLanguage('es')}>ES</button>
-        : <button type="button" onClick={() => i18n.changeLanguage('en')}>EN</button>
+        <button type="button" onClick={() => changeLanguage('es')} title="Ver en epañol">ES</button>
+        : <button type="button" onClick={() => changeLanguage('en')} title="Read in english">EN</button>
       }
       <button
         type='button'
         onClick={() => changeTheme()}
         title="Change theme"
       >
-        {theme == 'dark' ? <img src={sunIcon} className="icon" /> : <img src={moonIcon} className="icon" width="18px" height="18px" />}
+        {actualTheme == 'dark' ? <img src={sunIcon} className="icon" /> : <img src={moonIcon} className="icon" width="18px" height="18px" />}
       </button>
       <a href="mailto:pabloscaramutti@gmail.com">
         <img src={mailIcon} alt="mail-icon" title="Send me an email" className='icon' />

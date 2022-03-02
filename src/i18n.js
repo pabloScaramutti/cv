@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next';
 i18n
   .use(initReactI18next)
   .init({
-    debug: true,
+    debug: false,
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,
@@ -17,9 +17,9 @@ i18n
             title: "Work Experience",
             content: [
               {
-                company: "Panorama - Digital agency",
-                jobPosition: "Visual designer",
-                description: "Gained experience about digital marketing, graphic design, web design, event photography and videography."
+                company: "Cheers smart contracts",
+                jobPosition: "Front-end developer",
+                description: "I participate with the elicitation of requirements, the app design and develop the front end of the MVP app with ReactJS and Tailwind"
               },
               {
                 company: "DevGoblins",
@@ -27,10 +27,10 @@ i18n
                 description: "Made a landing page for the startup company with ReactJS"
               },
               {
-                company: "Cheers smart contracts",
-                jobPosition: "Front-end developer",
-                description: "I participate with the elicitation of requirements, the app design and develop the front end of the MVP app with ReactJS and Tailwind"
-              }
+                company: "Panorama - Digital agency",
+                jobPosition: "Visual designer",
+                description: "Gained experience about digital marketing, graphic design, web design, event photography and videography."
+              },
             ]
           },
           education: {
@@ -58,6 +58,21 @@ i18n
                 location: "La Plata, Buenos Aires, Argentina"
               }
             ]
+          },
+          contact: "Contact",
+          toolbox: "Toolbox",
+          languages: {
+            sectionTitle: "Languages",
+            content: [
+              {
+                language: "Spanish",
+                level: "Native"
+              },
+              {
+                language: "English",
+                level: "Intermediate"
+              }
+            ]
           }
         }
       },
@@ -68,9 +83,9 @@ i18n
             title: "Experiencia laboral",
             content: [
               {
-                company: "Panorama - Agencia digital",
-                jobPosition: "Diseñador visual",
-                description: "Realicé tareas vinculadas con el marketing digital, community managment, diseño gráfico, diseño web, fotografía de eventos y videografía."
+                company: "Cheers smart contracts",
+                jobPosition: "Front-end developer",
+                description: "Participé de la elicitacion de requerimientos, el diseño de la aplicación y el desarrollo front end del MVP con ReactJS y Tailwind"
               },
               {
                 company: "DevGoblins",
@@ -78,10 +93,10 @@ i18n
                 description: "Realice la pagina principal de la startup con ReactJS"
               },
               {
-                company: "Cheers smart contracts",
-                jobPosition: "Front-end developer",
-                description: "Participé de la elicitacion de requerimientos, el diseño de la aplicación y el desarrollo front end del MVP con ReactJS y Tailwind"
-              }
+                company: "Panorama - Agencia digital",
+                jobPosition: "Diseñador visual",
+                description: "Realicé tareas vinculadas con el marketing digital, community managment, diseño gráfico, diseño web, fotografía de eventos y videografía."
+              },
             ]
           },
           education: {
@@ -107,6 +122,21 @@ i18n
                 university: "Universidad Nacional de La Plata",
                 faculty: "Facultad de Informática",
                 location: "La Plata, Buenos Aires, Argentina"
+              }
+            ]
+          },
+          contact: "Contacto",
+          toolbox: "Herramientas",
+          languages: {
+            sectionTitle: "Idiomas",
+            content: [
+              {
+                language: "Español",
+                level: "Nativo"
+              },
+              {
+                language: "Ingles",
+                level: "Intermedio"
               }
             ]
           }

@@ -46,7 +46,8 @@ li {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: .8em;
+  row-gap: .8em;
+  column-gap: .5em;
   margin: .5em 0;
 }
 
@@ -65,6 +66,10 @@ p {
 
 .flex {
   display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .align-center {
@@ -189,9 +194,18 @@ p {
   margin: .8em 0 0 0;
 }
 
-.skills-container {
-  display: flex;
-  gap: 1em;
+.skills-container div {
+  margin-top: 2em;
+}
+
+.skill-list {
+  display: grid;
+  column-gap: 2em;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+
+.skill-list li {
+  width: 100px;
 }
 
 @media (max-width: 1280px) {
@@ -200,13 +214,23 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1.5em;
+    gap: 2.5em;
     justify-content: space-between;
     padding-bottom: 3em;
   }
 
   .content .curriculum {
     width: 100%;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2em;
+  }
+
+  .content .contact div {
+    flex-grow: 1;
   }
 
   .main-container {

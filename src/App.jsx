@@ -6,18 +6,25 @@ import Languages from './components/Languages'
 import JobExperience from './components/JobExperience'
 import Education from './components/Education'
 import Menu from './components/Menu'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { useTranslation, Trans } from 'react-i18next'
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || 'dark')
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+
+  useEffect(() => {
+    const lang = localStorage.getItem("lang")
+    if (lang)
+      i18n.changeLanguage(lang)
+  }, [])
+
 
   return (
     <div className="App" data-theme={theme}>
       <div className="main-container">
-        <Menu theme={theme} setTheme={setTheme} />
+        <Menu actualTheme={theme} setTheme={setTheme} />
         <Header />
         <p className="bio font-light">
           <Trans>bio</Trans>

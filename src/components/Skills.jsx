@@ -1,3 +1,5 @@
+import { useTranslation, Trans } from 'react-i18next'
+
 import htmlIcon from '../assets/icons/html-5.svg'
 import cssIcon from '../assets/icons/css3.svg'
 import jsIcon from '../assets/icons/javascript.svg'
@@ -62,13 +64,19 @@ const visual = [
 ]
 
 export default function Skills() {
+  const { t } = useTranslation()
+
   return (
     <div >
-      <h1>Toolbox</h1>
+      <h1>
+        <Trans>
+          toolbox
+        </Trans>
+      </h1>
       <div className='skills-container'>
         <div>
           <h2>IT</h2>
-          <ul>
+          <ul className='skill-list'>
             {tools.map(e =>
               <li key={e.name}>
                 <img src={e.icon} className="icon" />
@@ -79,7 +87,7 @@ export default function Skills() {
         </div>
         <div>
           <h2>Visual</h2>
-          <ul>
+          <ul className='skill-list'>
             {visual.map(e =>
               <li key={e.name}>
                 <img src={e.icon} className="icon"></img>
