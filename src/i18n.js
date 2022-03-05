@@ -12,14 +12,14 @@ i18n
     resources: {
       en: {
         translation: {
-          bio: "I’m 27 years old based in La Plata, Argentina. I've lernt a lot of tools and skills in my years as student and expanded this knowledge working in startups and as a freelancer. I love new challenges, finding solutions for problems and helping others to have a better life. With my background on multimedia design and programming, I can ideate solutions and bring them to life. <br/> I’m currently searching new experiences to apply and develope my skills and learn from team work.",
+          bio: "I’m 27 years old based in La Plata, Argentina. I've lernt a lot of tools and skills in my years as student and expanded this knowledge working in startups and as a freelancer. I love new challenges, finding solutions for problems and helping others to have a better life. With my background on multimedia design and programming, I can ideate solutions and bring them to life. <br/> I’m currently working with Reactjs and I'm searching for new experience to apply and develope my skills and learn from team work.",
           workExperience: {
             title: "Work Experience",
             content: [
               {
                 company: "Cheers smart contracts",
                 jobPosition: "Front-end developer",
-                description: "I participate with the elicitation of requirements, the app design and develop the front end of the MVP app with ReactJS and Tailwind"
+                description: "I participated with the elicitation of requirements, the app design and developed the front end of the MVP app with ReactJS and Tailwind"
               },
               {
                 company: "DevGoblins",
@@ -78,7 +78,7 @@ i18n
       },
       es: {
         translation: {
-          bio: "Tengo 27 años y vivo en La Plata, Argentina. Aprendí muchas habilidades en mi carrera universitaria y expandí mi conocimiento trabajando en startups y como freelancer. Me gustan los desafios y ayudar a las personas buscando soluciones a distintos problemas. Con mis conocimientos en diseño multimedia y programación, puedo idear soluciones y luego llevarlas a cabo. <br/> Actualmente estoy buscando nuevas experiencias para aplicar y desarrollar todos los conocimientos que fui aprendiendo a lo largo de los años y seguir aprendiendo y formarmandome.",
+          bio: "Tengo 27 años y vivo en La Plata, Argentina. Aprendí muchas habilidades en mi carrera universitaria y expandí mi conocimiento trabajando en startups y como freelancer. Me gustan los desafios y ayudar a las personas buscando soluciones a distintos problemas. Con mis conocimientos en diseño multimedia y programación, puedo idear soluciones y luego llevarlas a cabo. <br /> Actualmente estoy trabajando con Reactjs y estoy buscando nuevas experiencias para aplicar y desarrollar todos los conocimientos que fui aprendiendo a lo largo de los años y seguir aprendiendo y formarmandome.",
           workExperience: {
             title: "Experiencia laboral",
             content: [
