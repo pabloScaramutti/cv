@@ -6,8 +6,8 @@
 }
 
 [data-theme='dark'] {
-  --background: rgb(12, 12, 31);
-  --text-primary: rgb(217, 217, 230);
+  --background: #15141a;
+  --text-primary: #fbfbfe;
 }
 
 [data-theme='dark'] img:not(.icon) {

@@ -12,7 +12,7 @@ i18n
     resources: {
       en: {
         translation: {
-          bio: "I’m 27 years old based in La Plata, Argentina. I've lernt a lot of tools and skills in my years as student and expanded this knowledge working in startups and as a freelancer. I love new challenges, finding solutions for problems and helping others to have a better life. With my background on multimedia design and programming, I can ideate solutions and bring them to life. <br/> I’m currently working with Reactjs and I'm searching for new experience to apply and develope my skills and learn from team work.",
+          bio: "I’m 27 years old based in La Plata, Argentina. I've lernt a lot of tools and skills in my years as student and expanded this knowledge working in startups and as a freelancer. I love new challenges, finding solutions for problems and helping others to have a better life. With my background on multimedia design and programming I can ideate solutions and bring them to life. <br/> I’m currently working with Reactjs and I'm searching for new experience to apply and develop my skills and learn from team work.",
           workExperience: {
             title: "Work Experience",
             content: [
@@ -40,14 +40,14 @@ i18n
                 title: "Degree on Multimedia Design",
                 status: undefined,
                 university: "National University of La Plata",
-                faculty: "Faculty of arts",
+                faculty: "Faculty of Arts",
                 location: "La Plata, Buenos Aires, Argentina"
               },
               {
-                title: "Professorship in Multimedia Design",
+                title: "Teaching Degree in Multimedia Design",
                 status: "(Ongoing - 95.65%)",
                 university: "National University of La Plata",
-                faculty: "Faculty of arts",
+                faculty: "Faculty of Arts",
                 location: "La Plata, Buenos Aires, Argentina"
               },
               {
