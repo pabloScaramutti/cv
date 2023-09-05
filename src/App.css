@@ -105,7 +105,7 @@ p {
 }
 
 .main-container {
-  max-width: 60%;
+  max-width: 66%;
   padding: 1em 0 25vh 0;
   margin: 0 auto;
 }
@@ -149,6 +149,7 @@ p {
 
 .content .contact {
   width: 30%;
+  min-width: 288px;
   display: flex;
   flex-direction: column;
   gap: 2.5em;
@@ -201,11 +202,11 @@ p {
 .skill-list {
   display: grid;
   column-gap: 2em;
-  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
 }
 
 .skill-list li {
-  width: 100px;
+  width: 125px;
 }
 
 @media (max-width: 1280px) {
@@ -213,7 +214,7 @@ p {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2.5em;
     justify-content: space-between;
     padding-bottom: 3em;
@@ -231,9 +232,14 @@ p {
 
   .content .contact div {
     flex-grow: 1;
+    display: block;
   }
 
   .main-container {
     max-width: 85%;
+  }
+
+  .languages {
+    flex: 1;
   }
 }

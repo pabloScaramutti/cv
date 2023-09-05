@@ -1,7 +1,6 @@
 {
   "name": "curriculum",
   "homepage": ".",
-  "private": false,
   "license": "MIT",
   "version": "0.0.0",
   "scripts": {

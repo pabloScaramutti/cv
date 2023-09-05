@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react'
+import { useTranslation, Trans } from 'react-i18next'
+
 import './App.css'
 import Header from './components/Header'
 import Contact from './components/Contact'
@@ -6,9 +9,7 @@ import Languages from './components/Languages'
 import JobExperience from './components/JobExperience'
 import Education from './components/Education'
 import Menu from './components/Menu'
-import { useEffect, useState } from 'react'
 
-import { useTranslation, Trans } from 'react-i18next'
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || 'dark')

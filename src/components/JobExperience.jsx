@@ -12,10 +12,13 @@ export default function JobExperience() {
 
       {t("workExperience.content", { returnObjects: true }).map(e =>
         <div key={e.company}>
-          <h3>{e.company}</h3>
-          <h4>{e.jobPosition}</h4>
-          <p className="font-light">{e.description}</p>
-        </div>)
+          <Trans>
+            <h3>{e.company}</h3>
+            <h4>{e.jobPosition}</h4>
+            <p className="font-light">{e.description}</p>
+          </Trans>
+        </div>
+        )
       }
     </div>
   )

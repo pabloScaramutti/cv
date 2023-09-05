@@ -6,6 +6,11 @@ import jsIcon from '../assets/icons/javascript.svg'
 import reactIcon from '../assets/icons/react.svg'
 import vueIcon from '../assets/icons/vuejs.svg'
 import nextIcon from '../assets/icons/next-js.svg'
+import gitIcon from '../assets/icons/icons8-git-96.png'
+import storybookIcon from '../assets/icons/icons8-storybook.svg'
+import jestIcon from '../assets/icons/jest-icon.png'
+import apolloIcon from '../assets/icons/icons8-apollo.svg'
+import graphQlIcon from '../assets/icons/icons8-graphql.svg'
 
 import illustratorIcon from '../assets/icons/adobe-illustrator.svg'
 import lightroomIcon from '../assets/icons/adobe-lightroom.svg'
@@ -37,6 +42,30 @@ const tools = [
   {
     name: 'Vuejs',
     icon: vueIcon
+  },
+  {
+    name: 'React Native',
+    icon: reactIcon
+  },
+  {
+    name: 'GraphQl',
+    icon: graphQlIcon
+  },
+  {
+    name: 'Apollo Client',
+    icon: apolloIcon
+  },
+  {
+    name: 'Jest',
+    icon: jestIcon
+  },
+  {
+    name: 'Storybook',
+    icon: storybookIcon
+  },
+  {
+    name: 'Git',
+    icon: gitIcon
   },
 ]
 
